@@ -1,104 +1,108 @@
 <html>
 <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>你的邻居山田君的个人主页</title>
     <style>
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-
         body {
+            margin: 0;
             font-family: Arial, sans-serif;
-            background-color: #f0f0f0;
+            background: linear-gradient(to right, #00c6ff, #0072ff);
         }
 
         .container {
             max-width: 800px;
             margin: 0 auto;
+            padding: 20px;
         }
 
-        .header {
-            background-color: #0078d4;
+        .logo {
+            font-size: 36px;
+            font-weight: bold;
             color: white;
-            padding: 20px;
             text-align: center;
         }
 
-        .header h1 {
-            font-size: 36px;
-        }
-
-        .main {
-            padding: 20px;
-        }
-
-        .main p {
+        .subtitle {
             font-size: 18px;
-            line-height: 1.5;
+            color: white;
+            text-align: center;
         }
 
-        .input-box {
+        .intro {
+            font-size: 16px;
+            color: white;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .email {
             display: flex;
             align-items: center;
             justify-content: center;
             margin-top: 20px;
         }
 
-        .input-box input {
+        .email input {
             width: 300px;
             height: 40px;
             border: none;
+            border-radius: 20px;
+            padding-left: 20px;
             outline: none;
-            padding: 10px;
-            font-size: 16px;
         }
 
-        .input-box button {
-            width: 100px;
+        .email button {
+            width: 80px;
             height: 40px;
             border: none;
-            outline: none;
-            background-color: #0078d4;
-            color: white;
-            font-size: 16px;
+            border-radius: 20px;
+            margin-left: 10px;
+            background-color: white;
+            color: #0072ff;
             cursor: pointer;
         }
 
-        @media screen and (max-width: 600px) {
-            .container {
-                width: 100%;
-                margin: 0 auto;
-                padding-left: 10px;
-                padding-right: 10px; 
-                }
-            
-                .header h1 {
-                    font-size: 24px; 
-                    }
-                
-                    .input-box input {
-                        width: 200px; 
-                        }
-                    
-                        .input-box button {
-                            width: 80px; 
-                            }
-                        }
+        .search {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+
+        .search input {
+            width: 200px;
+            height: 40px;
+            border: none;
+            border-radius: 20px;
+            padding-left: 20px;
+            outline: none;
+        }
+
+        .search button {
+            width: 40px;
+            height: 40px;
+            border: none;
+            border-radius: 20px; 
+             margin-left:-40px; 
+             background-color:white; 
+             color:#0072ff; 
+             cursor:pointer; 
+         }
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="header">
-            <h1>你的邻居山田君的个人主页</h1>
+        <div class="logo">你的邻居山田君的个人主页</div>
+        <div class="subtitle">一个喜欢写博客的程序员</div>
+        <div class="intro">你好，我是山田君，一个热爱编程、设计和分享的人。这里是我的个人博客，你可以在这里看到我关于技术、生活和思考的文章。如果你对我的内容感兴趣，欢迎订阅我的邮件列表，我会定期给你发送最新的博客更新。</div>
+        <div class="email">
+           <input type="email" placeholder="请输入你的电子邮箱">
+           <button>订阅</button>
         </div>
-        <div class="main">
-            <p>你好，我是你的邻居山田君。我是一名网页设计师，喜欢创造简约又不失设计感的网页。这是我为你制作的一个示例网页，希望你喜欢。</p>
-            <p>如果你想了解更多关于我或者我的作品，请在下面的输入框中填入你的邮箱地址，我会尽快与你联系。</p>
-            <div class="input-box">
-                <input type="email" placeholder="请输入你的邮箱地址">
-                <button>提交</button>
-            </div>
-        </div>
+    </div>
+    <div class="search">
+       <input type="text" placeholder="搜索博客文章">
+       <button>🔍</button>
     </div>
 </body>
 </html>
