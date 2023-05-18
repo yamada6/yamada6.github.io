@@ -2,129 +2,103 @@
 <head>
     <style>
         * {
+            box-sizing: border-box;
             margin: 0;
             padding: 0;
-            box-sizing: border-box;
         }
 
         body {
             font-family: Arial, sans-serif;
-            background-color: #F0F0F0;
+            background-color: #f0f0f0;
         }
 
         .container {
-            max-width: 1200px;
+            max-width: 800px;
             margin: 0 auto;
         }
 
         .header {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
+            background-color: #0078d4;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 36px;
+        }
+
+        .main {
             padding: 20px;
         }
 
-        .logo {
-            font-size: 32px;
-            font-weight: bold;
-            color: #0078D4;
+        .main p {
+            font-size: 18px;
+            line-height: 1.5;
         }
 
-        .nav {
-            display: flex;
-            gap: 20px;
-        }
-
-        .nav a {
-            text-decoration: none;
-            color: #333333;
-        }
-
-        .nav a:hover {
-            color: #0078D4;
-        }
-
-        .banner {
-            height: 600px;
-            background-image: url("https://unsplash.com/photos/7ZphwmJYNSg/download?force=true&w=1920");
-            background-size: cover;
-            background-position: center;
+        .input-box {
             display: flex;
             align-items: center;
             justify-content: center;
+            margin-top: 20px;
         }
 
-        .banner h1 {
-            font-size: 64px;
+        .input-box input {
+            width: 300px;
+            height: 40px;
+            border: none;
+            outline: none;
+            padding: 10px;
+            font-size: 16px;
+        }
+
+        .input-box button {
+            width: 100px;
+            height: 40px;
+            border: none;
+            outline: none;
+            background-color: #0078d4;
             color: white;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
-        }
-
-        .content {
-            padding: 40px;
-        }
-
-        .content h2 {
-            font-size: 36px;
-            color: #333333;
-            margin-bottom: 20px;
-        }
-
-        .content p {
-            font-size: 18px;
-            color: #666666;
-            line-height: 1.5;
-            margin-bottom: 20px;
-        }
-
-        .content button {
-            display: inline-block;
-            padding: 10px 20px;
-            border-radius: 5px;
-            background-color: #0078D4;
-            color: white;
-            font-size: 18px;
+            font-size: 16px;
             cursor: pointer;
         }
 
-        .content button:hover {
-            background-color:#005A9E ;
-        }
-
-        .footer {
-            background-color:#0078D4 ;
-            padding: 20px;
-        }
-
-        .footer p {
-            font-size: 16px;
-            color:white ;
-            text-align:center ;
-        }
+        @media screen and (max-width: 600px) {
+            .container {
+                width: 100%;
+                margin: 0 auto;
+                padding-left: 10px;
+                padding-right: 10px; 
+                }
+            
+                .header h1 {
+                    font-size: 24px; 
+                    }
+                
+                    .input-box input {
+                        width: 200px; 
+                        }
+                    
+                        .input-box button {
+                            width: 80px; 
+                            }
+                        }
     </style>
 </head>
 <body>
     <div class="container">
         <div class="header">
-           <div class="logo">Bing</div>
-           <div class="nav">
-               <a href="#">首页</a>
-               <a href="#">关于</a>
-               <a href="#">联系</a>
-           </div>
-       </div>
-       <div class="banner">
-           <h1>你的邻居山田君的个人主页</h1>
-       </div>
-       <div class="content">
-           <h2>欢迎来到我的网站</h2>
-           <p>我是你的邻居山田君，这是我用Bing帮助下构建的一个简约又不失设计感的网页。</p>
-           <p>在这里，你可以了解我最新的动态，我的兴趣爱好，我的作品展示，以及我的联系方式。</p>
-           <button>开始探索</button>
-       </div>
-       <div class="footer">
-           <p>©2023 by 山田君. Proudly created with Bing.</p>
-       </div>
+            <h1>你的邻居山田君的个人主页</h1>
+        </div>
+        <div class="main">
+            <p>你好，我是你的邻居山田君。我是一名网页设计师，喜欢创造简约又不失设计感的网页。这是我为你制作的一个示例网页，希望你喜欢。</p>
+            <p>如果你想了解更多关于我或者我的作品，请在下面的输入框中填入你的邮箱地址，我会尽快与你联系。</p>
+            <div class="input-box">
+                <input type="email" placeholder="请输入你的邮箱地址">
+                <button>提交</button>
+            </div>
+        </div>
     </div>
 </body>
 </html>
